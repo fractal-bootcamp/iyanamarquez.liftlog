@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="22758" systemVersion="23F79" minimumToolsVersion="Automatic" sourceLanguage="Swift" usedWithSwiftData="YES" userDefinedModelVersionIdentifier="">
+    <entity name="Exercise" representedClassName=".Exercise" syncable="YES">
+        <attribute name="category" optional="YES" attributeType="String"/>
+        <attribute name="id" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <relationship name="progressRecords" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Progress" inverseName="exercise" inverseEntity="Progress"/>
+        <relationship name="workouts" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Workouts" inverseName="exercises" inverseEntity="Workouts"/>
+    </entity>
+    <entity name="Progress" representedClassName=".Progress" syncable="YES">
+        <attribute name="distance" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="id" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="reps" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="sets" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="weight" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <relationship name="exercise" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Exercise" inverseName="progressRecords" inverseEntity="Exercise"/>
+        <relationship name="workout" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Workouts" inverseName="progressRecords" inverseEntity="Workouts"/>
+    </entity>
+    <entity name="User" representedClassName=".User" syncable="YES">
+        <attribute name="email" optional="YES" attributeType="String"/>
+        <attribute name="id" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <relationship name="workouts" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Workouts" inverseName="user" inverseEntity="Workouts"/>
+    </entity>
+    <entity name="Workouts" representedClassName=".Workouts" syncable="YES">
+        <attribute name="date" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="id" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="notes" optional="YES" attributeType="String"/>
+        <relationship name="exercises" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Exercise" inverseName="workouts" inverseEntity="Exercise"/>
+        <relationship name="progressRecords" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Progress" inverseName="workout" inverseEntity="Progress"/>
+        <relationship name="user" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="User" inverseName="workouts" inverseEntity="User"/>
+    </entity>
+</model>
