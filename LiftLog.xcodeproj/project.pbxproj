@@ -14,6 +14,16 @@
 		B90B761B2C7393A700BDE673 /* LiftLogTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B90B761A2C7393A700BDE673 /* LiftLogTests.swift */; };
 		B90B76252C7393A700BDE673 /* LiftLogUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B90B76242C7393A700BDE673 /* LiftLogUITests.swift */; };
 		B90B76272C7393A700BDE673 /* LiftLogUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B90B76262C7393A700BDE673 /* LiftLogUITestsLaunchTests.swift */; };
+		B90B76352C73A0C100BDE673 /* Workout.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B90B76332C73A0C100BDE673 /* Workout.xcdatamodeld */; };
+		B90B76662C73BA0200BDE673 /* Workouts+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = B90B765E2C73BA0200BDE673 /* Workouts+CoreDataClass.swift */; };
+		B90B76672C73BA0200BDE673 /* Workouts+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = B90B765F2C73BA0200BDE673 /* Workouts+CoreDataProperties.swift */; };
+		B90B76682C73BA0200BDE673 /* User+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = B90B76602C73BA0200BDE673 /* User+CoreDataClass.swift */; };
+		B90B76692C73BA0200BDE673 /* User+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = B90B76612C73BA0200BDE673 /* User+CoreDataProperties.swift */; };
+		B90B766A2C73BA0200BDE673 /* Progress+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = B90B76622C73BA0200BDE673 /* Progress+CoreDataClass.swift */; };
+		B90B766B2C73BA0200BDE673 /* Progress+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = B90B76632C73BA0200BDE673 /* Progress+CoreDataProperties.swift */; };
+		B90B766D2C73BA0200BDE673 /* Exercise+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = B90B76652C73BA0200BDE673 /* Exercise+CoreDataProperties.swift */; };
+		B90B766F2C73CA0A00BDE673 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B90B766E2C73CA0A00BDE673 /* AppDelegate.swift */; };
+		B90B76712C73CD0500BDE673 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B90B76702C73CD0500BDE673 /* DataManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +54,16 @@
 		B90B76202C7393A700BDE673 /* LiftLogUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LiftLogUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B90B76242C7393A700BDE673 /* LiftLogUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiftLogUITests.swift; sourceTree = "<group>"; };
 		B90B76262C7393A700BDE673 /* LiftLogUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiftLogUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B90B76342C73A0C100BDE673 /* Workout.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Workout.xcdatamodel; sourceTree = "<group>"; };
+		B90B765E2C73BA0200BDE673 /* Workouts+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Workouts+CoreDataClass.swift"; sourceTree = "<group>"; };
+		B90B765F2C73BA0200BDE673 /* Workouts+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Workouts+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		B90B76602C73BA0200BDE673 /* User+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User+CoreDataClass.swift"; sourceTree = "<group>"; };
+		B90B76612C73BA0200BDE673 /* User+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		B90B76622C73BA0200BDE673 /* Progress+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Progress+CoreDataClass.swift"; sourceTree = "<group>"; };
+		B90B76632C73BA0200BDE673 /* Progress+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Progress+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		B90B76652C73BA0200BDE673 /* Exercise+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Exercise+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		B90B766E2C73CA0A00BDE673 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B90B76702C73CD0500BDE673 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +94,14 @@
 		B90B75FD2C7393A400BDE673 = {
 			isa = PBXGroup;
 			children = (
+				B90B765E2C73BA0200BDE673 /* Workouts+CoreDataClass.swift */,
+				B90B765F2C73BA0200BDE673 /* Workouts+CoreDataProperties.swift */,
+				B90B76602C73BA0200BDE673 /* User+CoreDataClass.swift */,
+				B90B76612C73BA0200BDE673 /* User+CoreDataProperties.swift */,
+				B90B76622C73BA0200BDE673 /* Progress+CoreDataClass.swift */,
+				B90B76632C73BA0200BDE673 /* Progress+CoreDataProperties.swift */,
+				B90B76652C73BA0200BDE673 /* Exercise+CoreDataProperties.swift */,
+				B90B76332C73A0C100BDE673 /* Workout.xcdatamodeld */,
 				B90B76082C7393A400BDE673 /* LiftLog */,
 				B90B76192C7393A700BDE673 /* LiftLogTests */,
 				B90B76232C7393A700BDE673 /* LiftLogUITests */,
@@ -98,6 +126,8 @@
 				B90B760B2C7393A400BDE673 /* ContentView.swift */,
 				B90B760D2C7393A600BDE673 /* Assets.xcassets */,
 				B90B760F2C7393A600BDE673 /* Preview Content */,
+				B90B766E2C73CA0A00BDE673 /* AppDelegate.swift */,
+				B90B76702C73CD0500BDE673 /* DataManager.swift */,
 			);
 			path = LiftLog;
 			sourceTree = "<group>";
@@ -257,6 +287,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B90B766F2C73CA0A00BDE673 /* AppDelegate.swift in Sources */,
+				B90B76712C73CD0500BDE673 /* DataManager.swift in Sources */,
+				B90B76662C73BA0200BDE673 /* Workouts+CoreDataClass.swift in Sources */,
+				B90B76672C73BA0200BDE673 /* Workouts+CoreDataProperties.swift in Sources */,
+				B90B76682C73BA0200BDE673 /* User+CoreDataClass.swift in Sources */,
+				B90B76692C73BA0200BDE673 /* User+CoreDataProperties.swift in Sources */,
+				B90B766A2C73BA0200BDE673 /* Progress+CoreDataClass.swift in Sources */,
+				B90B766B2C73BA0200BDE673 /* Progress+CoreDataProperties.swift in Sources */,
+				B90B766D2C73BA0200BDE673 /* Exercise+CoreDataProperties.swift in Sources */,
+				B90B76352C73A0C100BDE673 /* Workout.xcdatamodeld in Sources */,
 				B90B760C2C7393A400BDE673 /* ContentView.swift in Sources */,
 				B90B760A2C7393A400BDE673 /* LiftLogApp.swift in Sources */,
 			);
@@ -582,6 +622,20 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		B90B76332C73A0C100BDE673 /* Workout.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				B90B76342C73A0C100BDE673 /* Workout.xcdatamodel */,
+			);
+			currentVersion = B90B76342C73A0C100BDE673 /* Workout.xcdatamodel */;
+			name = Workout.xcdatamodeld;
+			path = /Users/iyanaslaptop/Desktop/fractalbootcamp/LiftLog/Workout.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = B90B75FE2C7393A400BDE673 /* Project object */;
 }
